@@ -1,0 +1,69 @@
+from pydantic import BaseModel
+
+
+class PatientIn(BaseModel):
+    nsclc_name: str
+    mhci: float
+    mhcii: float
+    coactivation_molecules: float
+    effector_cells: float
+    t_cell_traffic: float
+    nk_cells: float
+    t_cells: float
+    b_cells: float
+    m1_signatures: float
+    th1_signature: float
+    antitumor_cytokines: float
+    checkpoint_inhibition: float
+    treg: float
+    t_reg_traffic: float
+    neutrophil_signature: float
+    granulocyte_traffic: float
+    mdsc: float
+    mdsc_traffic: float
+    macrophages: float
+    macrophage_dc_traffic: float
+    th2_signature: float
+    protumor_cytokines: float
+    caf: float
+    matrix: float
+    matrix_remodeling: float
+    angiogenesis: float
+    endothelium: float
+    proliferation_rate: float
+    emt_signature: float
+
+class Patient(PatientIn):
+    index: int
+    '''
+    nsclc_name: str
+    mhci: float
+    mhcii: float
+    coactivation_molecules: float
+    effector_cells: float
+    t_cell_traffic: float
+    nk_cells: float
+    t_cells: float
+    b_cells: float
+    m1_signatures: float
+    th1_signature: float
+    antitumor_cytokines: float
+    checkpoint_inhibition: float
+    treg: float
+    t_reg_traffic: float
+    neutrophil_signature: float
+    granulocyte_traffic: float
+    mdsc: float
+    mdsc_traffic: float
+    macrophages: float
+    macrophage_dc_traffic: float
+    th2_signature: float
+    protumor_cytokines: float
+    caf: float
+    matrix: float
+    matrix_remodeling: float
+    angiogenesis: float
+    endothelium: float
+    proliferation_rate: float
+    emt_signature: float
+    '''

@@ -1,0 +1,10 @@
+fastapi
+sqlalchemy
+databases
+databases[postgressql]
+pandas
+uvicorn
+pydantic
+asyncpg
+psycopg2
+python-multipart
